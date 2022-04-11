@@ -6,4 +6,5 @@ namespace: dev
 # Feature Toggles
 #
 resources:
+- rbac.yaml
 - setup.yaml
