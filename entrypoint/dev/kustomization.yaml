@@ -6,4 +6,4 @@ namespace: dev
 # Feature Toggles
 #
 resources:
-- ./infra/setup.yaml
+- ../../infra/setup.yaml
