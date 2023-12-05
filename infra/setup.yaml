@@ -15,7 +15,7 @@ metadata:
   name: helloworld-tf
 spec:
   path: ./terraform
-  approvePlan: "plan-main-ce98c35d7c"
+  approvePlan: "plan-main-d598b94d0c"
   storeReadablePlan: "json"
   interval: 1m
   sourceRef:
