@@ -32,10 +32,6 @@ output "sixth" {
   value = "Lets get some good news, ${var.subject}!"
 }
 
-output "sixth" {
-  value = "Lets get some good news, ${var.subject}!"
-}
-
 output "seventh" {
   value = "another shot, ${var.subject}!"
 }
