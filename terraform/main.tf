@@ -15,3 +15,7 @@ output "hello_world" {
 output "second_output_test" {
   value = "lets validate changes to Terraform work, ${var.subject}!"
 }
+
+output "third" {
+  value = "lets validate changes to Terraform work, ${var.subject}!"
+}
