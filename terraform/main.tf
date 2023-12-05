@@ -27,3 +27,7 @@ output "fourth" {
 output "fifth" {
   value = "trying to extract plan output, ${var.subject}!"
 }
+
+output "sixth" {
+  value = "Lets get some good news, ${var.subject}!"
+}
