@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: helloworld-tf
+  name: helloworld-tf-2
 spec:
   interval: 1m
   url: https://github.com/gesparza3/tf-controller-helloworld
