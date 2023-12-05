@@ -37,5 +37,5 @@ output "seventh" {
 }
 
 output "eighth" {
-  value = "here we go again, ${var.subject}!"
+  value = "jaskldfjalsdkfj go again, ${var.subject}!"
 }
