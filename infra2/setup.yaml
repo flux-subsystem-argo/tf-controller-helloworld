@@ -17,7 +17,7 @@ metadata:
 spec:
   path: ./terraform2
   approvePlan: ""
-  storeReadablePlan: "json"
+  storeReadablePlan: "human"
   interval: 1m
   sourceRef:
     kind: GitRepository
