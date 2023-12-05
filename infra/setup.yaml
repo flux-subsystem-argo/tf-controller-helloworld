@@ -16,6 +16,7 @@ metadata:
 spec:
   path: ./terraform
   approvePlan: ""
+  storeReadablePlan: "true"
   interval: 1m
   sourceRef:
     kind: GitRepository
