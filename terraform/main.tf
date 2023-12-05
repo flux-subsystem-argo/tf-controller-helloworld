@@ -37,5 +37,5 @@ output "seventh" {
 }
 
 output "eighth" {
-  value = "Lets verify that we can see plan in json format ${var.subject}!"
+  value = "Lets generate a new plan ${var.subject}!"
 }
