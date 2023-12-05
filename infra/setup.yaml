@@ -17,6 +17,7 @@ spec:
   path: ./terraform
   approvePlan: "plan-main-ce98c35d7c"
   storeReadablePlan: "human"
+  force: true
   interval: 1m
   sourceRef:
     kind: GitRepository
