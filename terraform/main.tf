@@ -35,3 +35,7 @@ output "sixth" {
 output "seventh" {
   value = "another shot, ${var.subject}!"
 }
+
+output "eighth" {
+  value = "here we go again, ${var.subject}!"
+}
