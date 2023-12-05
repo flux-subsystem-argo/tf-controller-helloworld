@@ -23,3 +23,7 @@ output "third" {
 output "fourth" {
   value = "lets roll this one more time, ${var.subject}!"
 }
+
+output "fifth" {
+  value = "trying to extract plan output, ${var.subject}!"
+}
