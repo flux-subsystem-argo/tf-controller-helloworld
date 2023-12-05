@@ -11,3 +11,7 @@ variable "subject" {
 output "hello_world" {
   value = "hey hey ya, ${var.subject}!"
 }
+
+output "second_output_test" {
+  value = "lets validate changes to Terraform work, ${var.subject}!"
+}
