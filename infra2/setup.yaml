@@ -12,14 +12,15 @@ spec:
 apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
-  name: helloworld-tf
+  name: helloworld-tf-2
+  namespace: dev2
 spec:
-  path: ./terraform
-  approvePlan: "plan-main-ce98c35d7c"
+  path: ./terraform2
+  approvePlan: ""
   storeReadablePlan: "json"
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: helloworld-tf
+    name: helloworld-tf-2
   writeOutputsToSecret:
-    name: helloworld-outputs
+    name: helloworld-2-outputs
