@@ -19,13 +19,14 @@ spec:
   storeReadablePlan: "human"
   interval: 1m
   runnerPodTemplate:
-    resources:
-      limits:                                                                                                                                                           │
-        cpu: "1"                                                                                                                                                        │
-        memory: 1Gi                                                                                                                                                     │
-      requests:                                                                                                                                                         │
-        cpu: 200m                                                                                                                                                       │
-        memory: 64Mi 
+    spec:
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
   sourceRef:
     kind: GitRepository
     name: helloworld-tf
