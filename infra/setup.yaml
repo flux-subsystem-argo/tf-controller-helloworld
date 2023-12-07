@@ -15,7 +15,7 @@ metadata:
   name: helloworld-tf
 spec:
   path: ./terraform
-  approvePlan: "auto"
+  approvePlan: ""
   storeReadablePlan: "human"
   interval: 1m
   sourceRef:
