@@ -11,3 +11,7 @@ variable "subject" {
 output "hello_world" {
   value = "hey hey ya, ${var.subject}!"
 }
+
+output "hello_world2" {
+  value = "hey hey ya, ${var.subject}!"
+}
