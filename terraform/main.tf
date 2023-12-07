@@ -12,30 +12,26 @@ output "hello_world" {
   value = "hey hey ya, ${var.subject}!"
 }
 
-output "second_output_test" {
-  value = "lets validate changes to Terraform work, ${var.subject}!"
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
 }
 
-output "third" {
-  value = "lets validate changes to Terraform work, ${var.subject}!"
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
 }
 
-output "fourth" {
-  value = "lets roll this one more time, ${var.subject}!"
-}
 
-output "fifth" {
-  value = "trying to extract plan output, ${var.subject}!"
-}
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket-with-tf-controller"
 
-output "sixth" {
-  value = "Lets get some good news, ${var.subject}!"
-}
-
-output "seventh" {
-  value = "another shot, ${var.subject}!"
-}
-
-output "eighth" {
-  value = "Lets generate a new plan ${var.subject}!"
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
 }
