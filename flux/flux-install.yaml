@@ -10227,4 +10227,4 @@ spec:
   interval: 1h0m0s
   ref:
     tag: v4.38.0-v1alpha11
-  url: oci://ghcr.io/tf-controller/aws-primitive-modules
+  url: oci://ghcr.io/tf-controller/aws-primitive-modules.
