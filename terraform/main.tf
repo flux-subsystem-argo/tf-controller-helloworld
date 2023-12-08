@@ -9,7 +9,7 @@ variable "subject" {
 }
 
 output "hello_world" {
-  value = "hey hey ya, ${var.subject}!"
+  value = "new output testgtttttttt!"
 }
 
 output "hello_world2" {
