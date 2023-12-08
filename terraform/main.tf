@@ -13,7 +13,7 @@ output "hello_world" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "terraform-controller-232r52422"
+  bucket = "terraform-controller-0932983248239"
 
   tags = {
     Name        = "My bucket"
