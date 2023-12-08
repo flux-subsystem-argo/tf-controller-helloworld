@@ -4550,7 +4550,6 @@ spec:
                     enum:
                     - GitRepository
                     - Bucket
-                    - OCIRepository
                     type: string
                   name:
                     description: Name of the referent.
@@ -9490,7 +9489,6 @@ spec:
                     enum:
                     - GitRepository
                     - Bucket
-                    - OCIRepository
                     type: string
                   name:
                     description: Name of the referent.
@@ -10214,17 +10212,3 @@ spec:
         fsGroup: 1337
       serviceAccountName: tf-controller
       terminationGracePeriodSeconds: 10
----
-# Source: tf-controller/templates/packages.yaml
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: OCIRepository
-metadata:
-  name: aws-package
-  annotations:
-    metadata.weave.works/description: "This is the AWS package containing primitive modules for Weave TF-controller."
-    metadata.weave.works/docs-url: "https://github.com/tf-controller/aws-primitive-modules"
-spec:
-  interval: 1h0m0s
-  ref:
-    tag: v4.38.0-v1alpha11
-  url: oci://ghcr.io/tf-controller/aws-primitive-modules.
