@@ -38,7 +38,6 @@ metadata:
     app.kubernetes.io/name: tf-controller
     app.kubernetes.io/instance: tf-controller
     app.kubernetes.io/version: "v0.15.1"
-    app.kubernetes.io/managed-by: Helm
     control-plane: controller
 spec:
   group: infra.contrib.fluxcd.io
