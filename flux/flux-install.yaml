@@ -38,6 +38,7 @@ metadata:
     app.kubernetes.io/name: tf-controller
     app.kubernetes.io/instance: tf-controller
     app.kubernetes.io/version: "v0.15.1"
+    app.kubernetes.io/managed-by: Helm
     control-plane: controller
 spec:
   group: infra.contrib.fluxcd.io
@@ -9974,7 +9975,6 @@ rules:
   resources:
   - buckets
   - gitrepositories
-  - ocirepositories
   verbs:
   - get
   - list
@@ -9984,7 +9984,6 @@ rules:
   resources:
   - buckets/status
   - gitrepositories/status
-  - ocirepositories/status
   verbs:
   - get
 ---
