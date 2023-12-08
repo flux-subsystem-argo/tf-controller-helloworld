@@ -9,9 +9,19 @@ variable "subject" {
 }
 
 output "hello_world" {
-  value = "new output testgtttttttt!"
+  value = "trying to create s3 bucket!"
 }
 
-output "hello_world2" {
-  value = "hey hey ya, ${var.subject}!"
+resource "aws_s3_bucket" "example" {
+  bucket = "terraform-controller-232r52422"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+
+output "bucket_name" {
+  value = aws_s3_bucket.id
 }
