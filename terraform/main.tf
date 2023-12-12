@@ -1,22 +1,33 @@
 terraform {
   required_version = ">= 0.12.26"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
 }
 
-variable "subject" {
-   type = string
-   default = "tfctl-rc"
-   description = "Subject to hello"
+output "test" {
+  value = "test"
 }
 
-output "hello_world" {
-  value = "trying to create s3 bucket!"
+provider "aws" {
+  # access_key = var.awsAccessKeyId
+  # secret_key = var.awsSecretAccessKey
+  region = "us-east-1"
+  # token      = var.awsSessionToken
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "terraform-controller-0932983248239"
+resource "aws_s3_bucket" "tf-controller-poc-test-bucket" {
+  bucket = "tf-controller-poc-test-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "tf-controller-poc-test-bucket"
     Environment = "Dev"
   }
+}
+
+output "tf-controller-poc-test-bucket-arn" {
+  value = try(aws_s3_bucket.tf-controller-poc-test-bucket.arn, "No bucket")
 }
