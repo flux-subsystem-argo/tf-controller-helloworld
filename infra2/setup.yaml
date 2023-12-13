@@ -13,7 +13,7 @@ apiVersion: infra.contrib.fluxcd.io/v1alpha1
 kind: Terraform
 metadata:
   name: helloworld-tf-2
-  namespace: dev2
+  namespace: dev
 spec:
   path: ./terraform2
   approvePlan: "auto"
