@@ -16,7 +16,7 @@ metadata:
   namespace: dev2
 spec:
   path: ./terraform2
-  approvePlan: "plan-main-92f20d0387"
+  approvePlan: "auto"
   storeReadablePlan: "human"
   interval: 1m
   sourceRef:
