@@ -11,3 +11,7 @@ variable "subject" {
 output "hello_world" {
   value = "this is namespace dev2, ${var.subject}!"
 }
+
+output "hello_world2" {
+  value = "this is namespace dev2, ${var.subject}!"
+}
