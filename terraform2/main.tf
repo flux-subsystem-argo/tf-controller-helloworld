@@ -8,10 +8,10 @@ variable "subject" {
    description = "Subject to hello and branch planner test"
 }
 
-output "hello_world" {
-  value = "this is namespace dev2, ${var.subject}!"
+output "hello_worldZero" {
+  value = "this is namespace dev, ${var.subject}!"
 }
 
-output "hello_world2" {
-  value = "this is namespace dev2, ${var.subject}!"
+output "hello_worldOne" {
+  value = "this is namespace dev, ${var.subject}!"
 }
