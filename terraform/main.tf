@@ -2,6 +2,8 @@ terraform {
   required_version = ">= 0.12.26"
 }
 
+resource "null_resource" "example" {}
+
 variable "subject" {
    type = string
    default = "tfctl-rc"
