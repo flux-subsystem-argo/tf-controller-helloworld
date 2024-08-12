@@ -5,7 +5,7 @@ metadata:
   name: helloworld-tf
 spec:
   interval: 1m
-  url: https://github.com/flux-subsystem-argo/tf-controller-helloworld
+  url: https://github.com/marclee2/learn-terraform-github-actions
   ref:
     branch: main
 ---
